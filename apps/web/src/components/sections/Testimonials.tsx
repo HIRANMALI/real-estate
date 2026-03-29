@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Quote } from 'lucide-react';
 
 const testimonials = [
@@ -42,7 +43,7 @@ export default function Testimonials() {
               Words of <span className="text-accent underline decoration-2 underline-offset-4">Excellence</span>
             </h2>
             <div className="w-16 h-0.5 bg-accent mx-auto mb-6" />
-            <p className="text-white/40 uppercase tracking-[0.3em] text-[10px] font-bold">Trusted by India's finest minds</p>
+            <p className="text-white/40 uppercase tracking-[0.3em] text-[10px] font-bold">Trusted by India&apos;s finest minds</p>
           </motion.div>
         </div>
 
@@ -60,12 +61,18 @@ export default function Testimonials() {
               
               <div className="relative z-10 flex flex-col h-full">
                 <p className="text-white/70 leading-relaxed mb-10 font-medium flex-grow">
-                  "{t.content}"
+                  &quot;{t.content}&quot;
                 </p>
                 
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden border border-accent/30 pointer-events-none">
-                    <img src={t.image} alt={t.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                    <Image 
+                      src={t.image} 
+                      alt={t.name} 
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
+                    />
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-white uppercase tracking-wider">{t.name}</h4>

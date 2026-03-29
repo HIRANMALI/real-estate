@@ -164,7 +164,7 @@ export default function InquiryForm({ propertyId, propertyName, className, showT
         <div className="bg-[#F9F9F9] border border-black/5 p-4 lg:p-5 flex items-center justify-between rounded-sm">
           <div className="flex items-center gap-3">
             <div className="w-6 h-6 border-2 border-black/10 bg-white rounded-sm" />
-            <span className="text-[10px] text-muted font-bold uppercase tracking-wider">I'm not a robot</span>
+            <span className="text-[10px] text-muted font-bold uppercase tracking-wider">I&apos;m not a robot</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-8 h-8 bg-no-repeat bg-contain" style={{ backgroundImage: 'url(https://www.gstatic.com/recaptcha/api2/logo_48.png)' }} />

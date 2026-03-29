@@ -48,7 +48,7 @@ export default function ListingsPage() {
               Exclusive <span className="text-accent">Properties.</span>
             </h1>
             <p className="text-white/50 max-w-2xl text-lg font-light leading-relaxed">
-              Explore our handpicked selection of 25+ premium real estate listings across India's most prestigious locations.
+              Explore our handpicked selection of 25+ premium real estate listings across India&apos;s most prestigious locations.
             </p>
           </motion.div>
         </div>

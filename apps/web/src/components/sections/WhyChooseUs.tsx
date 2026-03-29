@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ShieldCheck, Award, Zap, HeartHandshake } from 'lucide-react';
 
 const reasons = [
@@ -73,10 +74,11 @@ export default function WhyChooseUs() {
               transition={{ duration: 1.2 }}
               className="absolute inset-0"
             >
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1600607687920-4e2a12cf1a57?auto=format&fit=crop&q=80&w=1200"
                 alt="Luxury Interior"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-dark/20" />
             </motion.div>
@@ -84,7 +86,7 @@ export default function WhyChooseUs() {
             <div className="absolute -bottom-10 -right-10 w-40 h-40 border-8 border-accent/20 z-10" />
             <div className="absolute top-10 left-10 p-6 bg-white/90 backdrop-blur-md border border-border z-20 max-w-xs shadow-xl rounded-sm">
               <p className="text-dark font-bold text-base leading-relaxed mb-4">
-                "Finding a home wasn't just a transaction, it was a transformation of our lifestyle."
+                &quot;Finding a home wasn&apos;t just a transaction, it was a transformation of our lifestyle.&quot;
               </p>
               <p className="text-[10px] uppercase tracking-widest font-black text-accent">Anirudh Sharma, Mumbai</p>
             </div>

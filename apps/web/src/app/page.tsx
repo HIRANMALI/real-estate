@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero';
+import Image from 'next/image';
 import StatsBar from '@/components/sections/StatsBar';
 import FeaturedListings from '@/components/sections/FeaturedListings';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
@@ -37,10 +38,11 @@ export default function Home() {
                 href={`/listings?city=${city.name}`}
                 className="group relative h-80 rounded-sm overflow-hidden shadow-lg"
               >
-                <img 
+                <Image 
                   src={city.img} 
                   alt={city.name} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex flex-col justify-end p-6">
                   <h4 className="text-xl font-bold text-white mb-1 uppercase">{city.name}</h4>

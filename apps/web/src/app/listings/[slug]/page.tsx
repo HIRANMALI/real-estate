@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { properties } from '@/data/properties';
 import ImageGallery from '@/components/ui/ImageGallery';
@@ -204,7 +205,13 @@ export default function PropertyDetailPage({ params }: PropertyPageProps) {
               <div className="bg-dark p-6 rounded-sm border border-white/10 text-white">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-accent">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200" alt="Agent" className="w-full h-full object-cover" />
+                    <Image 
+                      src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200" 
+                      alt="Agent" 
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover" 
+                    />
                   </div>
                   <div>
                     <h4 className="text-lg font-black text-accent uppercase tracking-[0.1em]">Aditya Singhania</h4>
